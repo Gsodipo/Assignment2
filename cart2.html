@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	    <script src = "js/purchaseorder.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+  <div class="wrapper">
+    <!-- Navigation -->
+    <nav class="main-nav">
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="products.html">Products</a>
+        </li>
+        <li>
+          <a href="findus.html">Find Us</a>
+        </li>
+        <li>
+          <a href="gallery.html">Gallery</a>
+        </li>
+      </ul>
+    </nav>
+
+    <form>
+
+      <h2 class="title">Cart</h2>
+      <img src="img/asus2.jpg" alt="asus"><br><br>
+     <label for="choice">Choose Your Product:</label>
+      <select id="choice" name="choice">
+          <option value="150">Asus</option>
+      </select>
+      <br> <br>
+      
+      <label for="quantity">Quantity Required</label>
+      <input type="number" id="quantity" name="quantity"> <br> <br>
+      
+      <hr>
+      <div id = "subtotal"> Subtotal:</div>
+      <div id = "tax"> Shipping (€3.00)</div>
+      <div id = "total"> Total:</div>
+      
+      <hr>
+          
+      <input type="button" value="Calculate" onclick="calculateTax()"><br><br>
+    
+  </form> 
+  <form style="display: inline" action="shippingdetails.html" method="get">
+    <button>Confirm</button>
+   </form>
+
+    <footer>
+      <div class="footer-content">
+        <h3>Computers & Laptops</h3>
+        <p>Here to make lives better</p>
+        <ul class="socials">
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+          <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+          <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p>copyright &copy;2021 computers&laptops. designed by <span>Grant Sodipo</span></p>
+      </div>
+ </footer>
+
+
+  </div>
+</body>
+</html>
